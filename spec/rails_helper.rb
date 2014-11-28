@@ -11,9 +11,18 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
-Capybara.app_host = 'http://example.com'
+# work around for failing integration spec
+module ::RSpec::Core
+  class ExampleGroup
+    include Capybara::DSL
+    include Capybara::RSpecMatchers
+  end
+end
 
 RSpec.configure do |config|
+# below line is added to pass tests in features ( to access rails roots in integration)
+  config.include Rails.application.routes.url_helpers
+
   config.include FactoryGirl::Syntax::Methods
   #config.include Devise::TestHelpers, type: :controller
   config.order = "random"
