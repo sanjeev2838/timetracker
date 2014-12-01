@@ -19,6 +19,8 @@ module ::RSpec::Core
   end
 end
 
+# Capybara.app_host = "http://#{subdomain}.lvh.me"
+
 RSpec.configure do |config|
 # below line is added to pass tests in features ( to access rails roots in integration)
   config.include Rails.application.routes.url_helpers
@@ -26,14 +28,19 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   #config.include Devise::TestHelpers, type: :controller
   config.order = "random"
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
   end
+
   config.before(:each) do
     DatabaseCleaner.start
   end
+
   config.after(:each) do
     DatabaseCleaner.clean
+    Apartment::database.reset
+    drop_schemas
   end
 end

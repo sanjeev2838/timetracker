@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3112801909">
+  <component name="DataSourceManagerImpl" format="xml" hash="3017722328">
     <data-source source="LOCAL" name="Rails timetracker: development" uuid="09b0f445-bf0f-4eaa-bdcb-77913d984540">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/time_tracker</jdbc-url>
-      <user-name>sanjeev</user-name>
-      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails timetracker: test" uuid="4003e6d9-76cb-4cb5-b655-d5bcc3a11081">
-      <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/time_tracker_test</jdbc-url>
-      <user-name>sanjeev</user-name>
-      <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails timetracker: production" uuid="d082b21f-b0ed-4893-a4c1-4d79157051c9">
-      <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/myapp_development</jdbc-url>
       <user-name>sanjeev</user-name>
       <user-password>dfdadfcbdfd9dfd9dfdddfc5dfd8dfce</user-password>
       <libraries />

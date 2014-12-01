@@ -20,7 +20,7 @@ gem 'devise_invitable', '~> 1.3.4'
 gem 'apartment', '~> 0.24.3'
 gem 'simple_form'
 
-gem 'bootstrap-sass', '3.2.0.2'
+gem 'bootstrap-sass', '3.3.1'
 
 group :development, :test do
   gem 'rails-erd'
